@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const db = require("../models");
+const db = require("../models/workout");
 
 router.post("/api/workouts", (req, res) => {
   db.Workout.create(req.body)
